@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/index.ts",
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "stripInternal": true,
+    "target": "es6"
+  },
+  "exclude": ["node_modules", "lib", "es"]
+}

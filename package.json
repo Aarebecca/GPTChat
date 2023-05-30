@@ -1,0 +1,45 @@
+{
+  "name": "gpt-ui",
+  "version": "1.0.0",
+  "description": "A chat UI design for chatGPT API dialogue",
+  "type": "module",
+  "main": "index.ts",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+  },
+  "dependencies": {
+    "@uiw/react-markdown-preview": "^4.1.10",
+    "antd": "^5.4.2",
+    "classnames": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@vitejs/plugin-react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.2",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aarebecca/GPTChat.git"
+  },
+  "keywords": [
+    "chatGPT",
+    "UI"
+  ],
+  "author": "Aaron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aarebecca/GPTChat/issues"
+  },
+  "homepage": "https://github.com/Aarebecca/GPTChat#readme"
+}

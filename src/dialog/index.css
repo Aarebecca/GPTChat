@@ -1,0 +1,74 @@
+.dialog-content {
+  width: 100%;
+  height: 0;
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: scroll;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.message {
+  max-width: 80%;
+}
+
+.user {
+  margin-left: auto;
+}
+
+.assistant {
+  margin-right: auto;
+}
+
+.message-content:not(.wmde-markdown) {
+  white-space: pre-line;
+}
+
+.user .message-content {
+  background-color: #24576b;
+}
+
+.input-container {
+  position: sticky;
+  bottom: 0;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.input-container .ant-spin-nested-loading {
+  width: 100%;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.stop-query {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.new-dialog {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.user .wmde-markdown p {
+  color: white;
+  margin: 0 !important;
+}
+.user .wmde-markdown pre {
+  margin: 0 !important;
+}
